@@ -17,15 +17,15 @@ def index():
     return render_template('index.html', data=None)
 
 
-@app.route('/form', methods=['GET', 'POST'])
-def form():
+@app.route('/mission', methods=['GET', 'POST'])
+def mission():
     inputForm = InputForm()
     data = None
     if inputForm.inputString.data:
         time.sleep(2)
         data = inputForm.inputString.data
     print(data)
-    return render_template('form.html', data=data, inputForm=inputForm)
+    return render_template('mission.html', data=data, inputForm=inputForm)
 
 
 if __name__ == '__main__':
