@@ -18,10 +18,22 @@ def index():
 def mission():
     return render_template('mission.html', data=None)
 
+@app.route('/experiments')
+def experiments():
+    return render_template('experiments.html', data=None)
+
+@app.route('/experiments/<path:path>')
+def experiment_detail(path):
+    return render_template('experiment_detail.html', data=None)
+
 @app.route('/about')
 def about():
     return render_template('about.html', data=None)
 
+# 404 Error Handling
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html', data=None), 404
 
 if __name__ == '__main__':
     app.run(debug=True)
