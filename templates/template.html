@@ -19,6 +19,15 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+  <style>
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu {
+      margin-top: 0;
+    }
+  </style>
   <nav class="navbar navbar-expand-lg navbar-dark bg-secondary py-2 fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand text-primary mx-2 me-3 user-select-none" href="/">
@@ -40,9 +49,9 @@
               Experiments
             </a>
             <ul class="dropdown-menu dropdown-menu-dark">
-              <li><a class="dropdown-item" href="#">Experiment 1</a></li>
-              <li><a class="dropdown-item" href="#">Experiment 2</a></li>
-              <li><a class="dropdown-item" href="#">Experiment 3</a></li>
+              <li><a class="dropdown-item" href="/experiments/experiment-1">Experiment 1</a></li>
+              <li><a class="dropdown-item" href="/experiments/experiment-2">Experiment 2</a></li>
+              <li><a class="dropdown-item" href="/experiments/experiment-3">Experiment 3</a></li>
             </ul>
           </li>
           <li class="nav-item">

@@ -1,36 +1,27 @@
 {% extends "template.html" %}
-{% block title %}Home{% endblock title %}
-{% block pageTitle %}Search{% endblock pageTitle %}
-{% block navLink %}search{% endblock navLink %}
+{% block title %}Our Mission{% endblock title %}
+{% block pageTitle %}Our Mission{% endblock pageTitle %}
+{% block navLink %}mission{% endblock navLink %}
 {% block body %}
 {{ super() }}
-<form class="pb-3 needs-validation" role="search" method="POST" action="" novalidate>
-    <div class="input-group mb-3">
-        {% if inputForm.inputString.errors %}
-        {{ inputForm.inputString(class="form-control is-invalid") }}
-        {% for error in inputForm.inputString.errors %}
-        <span class="invalid-feedback">{{ error }}</span>
-        {% endfor %}
-        {% else %}
-        {{ inputForm.inputString(class="form-control") }}
-        {% endif %}
-        {{ inputForm.submit(class="btn btn-outline-primary") }}
+<div class="card rounded-3 p-3 mx-5">
+    <div class="mx-2 text-center">
+        <blockquote class="blockquote">
+            <h3>Our mission is to inspire a love of science in children and make learning fun!</h3>
+            <br>
+            We believe that science should be accessible to everyone, and that learning should be fun! <br> We are
+            dedicated
+            to
+            creating
+            science kits for kids to learn about the world around them. <br> Our kits include everything needed for fun,
+            educational
+            experiments
+            that can be done at home.
+        </blockquote>
     </div>
-</form>
-{% endblock body %}
-
-{% block results %}
-{{ super() }}
-{% if data != None %}
-<div id="data">
-    {% if noResults %}
-    <h3 class="text-center">No Results</h3>
-    {% else %}
-    <h3>Input</h3>
-    <p>{{ data }}</p>
-    {% endif %}
 </div>
-{% endif %}
-{% endblock results %}
-
-{% block footerClass %}fixed-bottom{% endblock footerClass %}
+<div class="mx-auto">
+    <img src="https://whatmomslove.com/wp-content/uploads/2022/01/Science-Experiments-for-Kids-FEATURED.png"
+        alt="Kids doing Science!" class="img-fluid mx-auto d-block w-50 mt-2 rounded-3">
+</div>
+{% endblock body %}
