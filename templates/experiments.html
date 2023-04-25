@@ -5,80 +5,19 @@
 {% block body %}
 {{ super() }}
 <div class="row mb-5">
-    <div class="col-sm-4">
+    {% for title, description, link in experiments %}
+    <div class="col-sm-4 mb-3">
       <div class="card h-100">
         <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Experiment 1</h5>
+          <h5 class="card-title">{{ title }}</h5>
           <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Et malesuada fames ac turpis.
+            {{ description }}
           </p>
-          <a href="#" class="btn mt-auto btn-outline-primary">Learn More</a>
+          <a href="/experiments/{{ link }}" class="btn mt-auto btn-outline-primary">Learn More</a>
         </div>
       </div>
     </div>
-    <div class="col-sm-4">
-      <div class="card h-100">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Experiment 2</h5>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Et malesuada fames ac turpis.
-          </p>
-          <a href="#" class="btn mt-auto btn-outline-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card h-100">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Experiment 3</h5>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Et malesuada fames ac turpis.
-          </p>
-          <a href="#" class="btn mt-auto btn-outline-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-</div>
-
-<div class="row mb-5">
-    <div class="col-sm-4">
-      <div class="card h-100">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Experiment 4</h5>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Et malesuada fames ac turpis.
-          </p>
-          <a href="#" class="btn mt-auto btn-outline-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card h-100">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">Experiment 5</h5>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Et malesuada fames ac turpis.
-          </p>
-          <a href="#" class="btn mt-auto btn-outline-primary">Learn More</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card h-100">
-        <div class="card-body d-flex flex-column">
-          <h5 class="card-title">All Experiments</h5>
-          <p class="card-text">
-            Take a look at all of our exciting experiments!
-          </p>
-          <a href="#" class="btn mt-auto btn-outline-primary">Explore All</a>
-        </div>
-      </div>
-    </div>
-  </div>
+    {% endfor %}
 </div>
 {% endblock body %}
+{% block footerClass %}fixed-bottom{% endblock footerClass %}

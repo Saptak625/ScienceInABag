@@ -31,7 +31,7 @@
         <div class="col-sm-6 card h-100 w-100 mx-2">
           <div class="card-body d-flex flex-column">
             <h3 class="text-center mt-3">Our Mission</h3>
-            <p class="card-text">Science in a Bag is a company that creates science kits for kids to
+            <p class="card-text">Science in a Bag is an organization that creates science kits for kids to
               learn about the world around them. Our kits include everything needed for fun, educational experiments
               that
               can
@@ -79,70 +79,36 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row mb-5">
+          {% for title, description, link in featured[:3] %}
           <div class="col-sm-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Experiment 1</h5>
+                <h5 class="card-title">{{ title }}</h5>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Et malesuada fames ac turpis.
+                  {{ description }}
                 </p>
-                <a href="#" class="btn mt-auto btn-outline-primary">Learn More</a>
+                <a href="/experiments/{{ link }}" class="btn mt-auto btn-outline-primary">Learn More</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="card h-100">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Experiment 2</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Et malesuada fames ac turpis.
-                </p>
-                <a href="#" class="btn mt-auto btn-outline-primary">Learn More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card h-100">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Experiment 3</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Et malesuada fames ac turpis.
-                </p>
-                <a href="#" class="btn mt-auto btn-outline-primary">Learn More</a>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
         </div>
       </div>
       <div class="carousel-item">
         <div class="row mb-5">
+          {% for title, description, link in featured[3:] %}
           <div class="col-sm-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Experiment 4</h5>
+                <h5 class="card-title">{{ title }}</h5>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Et malesuada fames ac turpis.
+                  {{ description }}
                 </p>
-                <a href="#" class="btn mt-auto btn-outline-primary">Learn More</a>
+                <a href="/experiments/{{ link }}" class="btn mt-auto btn-outline-primary">Learn More</a>
               </div>
             </div>
           </div>
-          <div class="col-sm-4">
-            <div class="card h-100">
-              <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Experiment 5</h5>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Et malesuada fames ac turpis.
-                </p>
-                <a href="#" class="btn mt-auto btn-outline-primary">Learn More</a>
-              </div>
-            </div>
-          </div>
+          {% endfor %}
           <div class="col-sm-4">
             <div class="card h-100">
               <div class="card-body d-flex flex-column">
@@ -150,7 +116,7 @@
                 <p class="card-text">
                   Take a look at all of our exciting experiments!
                 </p>
-                <a href="#" class="btn mt-auto btn-outline-primary">Explore All</a>
+                <a href="/experiments" class="btn mt-auto btn-outline-primary">Explore All</a>
               </div>
             </div>
           </div>

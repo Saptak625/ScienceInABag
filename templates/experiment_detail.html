@@ -1,27 +1,11 @@
 {% extends "template.html" %}
-{% block title %}Experiments{% endblock title %}
-{% block pageTitle %}Experiments{% endblock pageTitle %}
+{% block title %}{{ title }}{% endblock title %}
+{% block pageTitle %}{{ title }}{% endblock pageTitle %}
 {% block navLink %}experiments{% endblock navLink %}
 {% block body %}
 {{ super() }}
-<div class="card rounded-3 p-3 mx-5">
-    <div class="mx-2 text-center">
-        <blockquote class="blockquote">
-            <h3>Our mission is to inspire a love of science in children and make learning fun!</h3>
-            <br>
-            We believe that science should be accessible to everyone, and that learning should be fun! <br> We are
-            dedicated
-            to
-            creating
-            science kits for kids to learn about the world around them. <br> Our kits include everything needed for fun,
-            educational
-            experiments
-            that can be done at home.
-        </blockquote>
-    </div>
-</div>
-<div class="mx-auto">
-    <img src="https://whatmomslove.com/wp-content/uploads/2022/01/Science-Experiments-for-Kids-FEATURED.png"
-        alt="Kids doing Science!" class="img-fluid mx-auto d-block w-50 mt-2 rounded-3">
-</div>
+<h3>Overview:</h3>
+<p>{{ description }}</p>
+<p>{{ content }}</p>
 {% endblock body %}
+{% block footerClass %}fixed-bottom{% endblock footerClass %}
