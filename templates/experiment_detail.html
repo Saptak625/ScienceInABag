@@ -1,11 +1,33 @@
 {% extends "template.html" %}
 {% block title %}{{ title }}{% endblock title %}
-{% block pageTitle %}{{ title }}{% endblock pageTitle %}
 {% block navLink %}experiments{% endblock navLink %}
 {% block body %}
-{{ super() }}
-<h3>Overview:</h3>
+<h1>{{ title }}</h1>
+<hr>
+<nav class="mb-3" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/experiments">Experiments</a></li>
+      <li class="breadcrumb-item active" aria-current="page">{{ title }}</li>
+    </ol>
+</nav>
+<h3 class="mt-4">Overview:</h3>
 <p>{{ description }}</p>
-<p>{{ content }}</p>
+<h3 class="mt-4">{{ content[0][0] }}</h3>
+<ul>
+{% for c in content[0][1] %}
+    <li>{{ c }}</li>
+{% endfor %}
+</ul>
+<h3 class="mt-4">{{ content[1][0] }}</h3>
+<ol>
+{% for c in content[1][1] %}
+    <li>{{ c }}</li>
+{% endfor %}
+</ol>
+{% for header, c_list in content[2:] %}
+<h3 class="mt-4">{{ header }}</h3>
+{% for c in c_list %}
+    <p>{{ c }}</p>
+{% endfor %}
+{% endfor %}
 {% endblock body %}
-{% block footerClass %}fixed-bottom{% endblock footerClass %}

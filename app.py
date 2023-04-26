@@ -23,6 +23,7 @@ def mission():
 @app.route('/experiments')
 def experiments():
     exp = read_all_experiments()
+    print(exp)
     return render_template('experiments.html', data=None, experiments=exp)
 
 @app.route('/experiments/<path:path>')

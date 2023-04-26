@@ -1,18 +1,19 @@
 # Oobleck
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis.
+Oobleck is a strange substance that is sometimes a solid and sometimes a liquid. In this experiment, your young scientists will learn about the properties of Oobleck and how it can be used to create moving objects.
 
 ## Materials
-* L straws (2-3)
-* Pipe cleaners (2-3)
-* Ping pong ball (1)
+* Cornstarch (1 cup)
+* Water (3/4 cup)
+* Food coloring (optional)
+* Plastic bowl or bin
 
 ## Instructions
-1. pour cornstarch into the container.
+1. Pour cornstarch into the container.
 2. Pour water over the cornstarch.
-3. Stir using the stick until uniformly mixed
+3. Stir using the stick until uniformly mixed.
 
 ## Scientific Concept
-Non-newtonian fluid → shifts between solid and liquid. Cornstarch molecules do not dissolve in water and instead, slide past each other.
+Oobleck is a non-Newtonian fluid. This means that it does not follow Newton's law of viscosity. Newton's law of viscosity states that the shear stress of a fluid is proportional to the velocity gradient of the fluid. This means that the faster you move a fluid, the more shear stress it will have. Oobleck does not follow this law because it is a suspension of cornstarch and water. The cornstarch particles are suspended in the water and when you move it slowly, the cornstarch particles can move out of the way. However, when you move it quickly, the cornstarch particles cannot move out of the way fast enough and the fluid becomes more solid.
 
 ## Real-World Application
-Can be used in the future to absorb explosions or as speed bumps.
+Oobleck is used in bulletproof vests. When a bullet hits the vest, the oobleck particles move out of the way and absorb the bullet's energy. This prevents the bullet from penetrating the vest and injuring the person wearing it.

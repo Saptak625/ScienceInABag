@@ -1,5 +1,5 @@
 # Slime
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis.
+Do you like SLIME? Slime is a fun and gooey substance that is loved by kids of all ages. In this experiment, your young scientists will learn how to make their own slime at home.
 
 ## Materials
 * Elmer’s Glue (5oz)

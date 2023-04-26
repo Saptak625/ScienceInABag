@@ -1,5 +1,5 @@
 # Ping Pong Ball
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis.
+Can You Levitate a Ping Pong Ball using just your breath? How long can you do it? In this experiment, young scientists will learn about air pressure and how it can be used to levitate a ping pong ball for a long period of time.
 
 ## Materials
 * L straws (2-3)
@@ -7,12 +7,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 * Ping pong ball (1)
 
 ## Instructions
-1. Take straws, and stretch them out into L shape
-2. Align straws and hold them together
-3. Wrap one pipe cleaner around straws to secure them together
-4. Take the other pipe cleaner, and from the end of the wire, bend into a circle with ~1-inch diameter
-5. Twist the circle pipe cleaner onto the straw by the end without a circle so that the circle is directly above the spout of the shorter leg of the L straw
-6. Place ping pong ball on the circle
+1. Take straws, and stretch them out into L shape.
+2. Align straws and hold them together.
+3. Wrap one pipe cleaner around straws to secure them together.
+4. Take the other pipe cleaner, and from the end of the wire, bend into a circle with ~1-inch diameter.
+5. Twist the circle pipe cleaner onto the straw by the end without a circle so that the circle is directly above the spout of the shorter leg of the L straw.
+6. Place ping pong ball on the circle.
 7. Blow into the straw. Do you see how the ping pong ball is suspended straight above the straw?
 
 ## Scientific Concept

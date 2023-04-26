@@ -1,5 +1,5 @@
 # Water Filter
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et malesuada fames ac turpis.
+Can You Make Dirty Water Clean? In this experiment, young scientists will learn about filtration and adsorption, and how they can be used to make dirty water clean.
 
 ## Materials
 * Sand
